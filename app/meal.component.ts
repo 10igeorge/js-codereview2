@@ -7,7 +7,7 @@ import { Meal } from './meal.model';
   template: `
   <div>
     <ul class="meals">
-      <li>{{meal.food}}: {{meal.calories}} calories -- {{meal.details}}</li>
+      <li>{{meal.food}}</li>
     </ul>
   </div>
   `
