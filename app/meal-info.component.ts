@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
     <div *ngIf="meal">
       <h4>{{meal.food}}</h4>
       <p>{{meal.calories}} calories</p>
-      <p *ngIf="meal.details">Notes: {{meal.details}}</p>
+      <p *ngIf="meal.details">Notes: {{meal.details}}</p><br><br>
     </div>
   `
 })

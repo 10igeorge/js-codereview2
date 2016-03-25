@@ -1,7 +1,7 @@
 <div class='meal-form'>
 <h4>Log meal:</h4>
-<input placeholder="Food" #newFood><br>
-<input type="number" placeholder="Calories" #newCalories><br>
-<textarea placeholder="Notes (optional)" #newNotes rows="5" cols="25"></textarea><br><br>
+<input class="input-sm" placeholder="Food" #newFood><br>
+<input class="input-sm" type="number" placeholder="Calories" #newCalories><br>
+<textarea class="input-sm" placeholder="Notes (optional)" #newNotes rows="5" cols="25"></textarea><br><br>
 <button (click)="logFood(newFood, newCalories, newNotes)" type="submit" class="btn btn-info">Log Meal</button>
 </div>

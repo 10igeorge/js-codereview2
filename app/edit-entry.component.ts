@@ -6,6 +6,7 @@ import {Meal} from './meal.model';
   inputs: ['meal'],
   template:`
     <div class="meal-form" *ngIf="meal">
+      <h5>Edit this entry: </h5>
       <label>Food: </label>
       <input [(ngModel)]="meal.food"/><br>
       <label>Calories: </label>
