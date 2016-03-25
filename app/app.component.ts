@@ -1,5 +1,6 @@
 import { Component } from 'angular2/core';
 import { Meal } from './meal.model';
+import { AllMealsComponent } from './all-meals.component';
 
 @Component({
   selector: 'my-app',
