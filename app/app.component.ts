@@ -7,7 +7,14 @@ import { AllMealsComponent } from './all-meals.component';
   directives: [AllMealsComponent],
   template:`
     <div class="container">
-      <h1>Meal Tracker</h1>
+      <div class="jumbotron">
+        <h1>Meal Tracker</h1>
+      </div>
+      <div class="welcome">
+        <h3>Welcome!</h3>
+        <h4>Use this helpful app to track your daily meals. A warning label will appear for foods greater than 300 calories. Feel free to edit your entries as you go. Enjoy!</h4><hr>
+        <br><br>
+      </div>
       <all-meals [allMeals]="meals"></all-meals>
     </div>
   `

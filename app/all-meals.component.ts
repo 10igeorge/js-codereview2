@@ -13,20 +13,7 @@ import {CaloriePipe} from './calorie.pipe';
   outputs: ['onMealSelect'],
   pipes: [CaloriePipe],
   directives: [MealComponent, NewMealComponent, MealInfoComponent, EditEntryComponent, TotalCaloriesComponent],
-  template:`
-    <div class="container">
-    <select (change)="onChange($event.target.value)">
-        <option value="all" selected="selected">All entries</option>
-        <option value="under300">Entries under 300 calories</option>
-      </select>
-      <meal-display *ngFor="#currentMeal of allMeals | calorie: filterCalories" (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal">
-      </meal-display>
-      <meal-info [meal]="selectedMeal"></meal-info>
-      <edit-entry [meal]="selectedMeal"></edit-entry>
-      <new-meal (onSubmitNewMeal)="createEntry($event)"></new-meal>
-      <total-calories [allMeals]="allMeals"></total-calories>
-    </div>
-  `
+  templateUrl:'app/all-meals.component.html'
 })
 
 export class AllMealsComponent {

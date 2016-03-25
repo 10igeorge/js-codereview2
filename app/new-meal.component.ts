@@ -19,7 +19,7 @@ export class NewMealComponent{
     } else if (newCalories.value == ""){
       alert("Please enter calories");
     } else {
-      var newEntry: any = [newFood.value, newCalories.value, newNotes.value];
+      var newEntry: any = [newFood.value, parseInt(newCalories.value), newNotes.value];
       this.onSubmitNewMeal.emit(newEntry);
       newFood.value = "";
       newCalories.value = "";

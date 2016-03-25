@@ -1,3 +1,23 @@
+body {
+  background-image: url(/img/bg.png);
+}
+
 h1 {
-  color: blue;
+  color: blue; }
+
+.unhealthy {
+  color: red;
+  font-size: 10px; }
+
+.selected a {
+  background-color: #EBB3A4;
+  color: #fff; }
+
+.list-group-item {
+  background-color: #F5FAFD;
+  width: 300px;
+}
+
+.welcome, .jumbotron {
+  text-align: center;
 }
