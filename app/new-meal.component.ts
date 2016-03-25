@@ -7,8 +7,8 @@ import { Meal } from './meal.model';
     template:`
       <div class='meal-form'>
       <h4>Log meal:</h4>
-      <input placeholder="Food" #newFood><br>
-      <input placeholder="Calories" #newCalories><br>
+      <input placeholder="Food" #newFood required><br>
+      <input placeholder="Calories" #newCalories required><br>
       <textarea placeholder="Notes" #newNotes rows="5" cols="25"></textarea><br><br>
       <button (click)="logFood(newFood, newCalories, newNotes)" type="submit" class="btn btn-info">Log Meal</button>
       </div>
