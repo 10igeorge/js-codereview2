@@ -3,7 +3,7 @@ import { Meal } from './meal.model';
 
 @Component({
     selector: 'meal-display',
-    // inputs: ['meal'],
+    inputs: ['meal'],
   template: `
   <div>
     <ul class="meals">
@@ -13,5 +13,5 @@ import { Meal } from './meal.model';
   `
 })
 export class MealComponent {
-  // public meal: Meal;
+  public meal: Meal;
 }
