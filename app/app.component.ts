@@ -1,10 +1,11 @@
 import { Component } from 'angular2/core';
+import { Meal } from './meal.model';
 
 @Component({
   selector: 'my-app',
   template:`
     <div class="container">
-      <h1>Skeleton Angular2 App</h1>
+      <h1>Meal Tracker</h1>
     </div>
   `
 })
