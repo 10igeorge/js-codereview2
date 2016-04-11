@@ -1,4 +1,4 @@
-# Meal Tracker
+# Meal Tracker Angular
 
 #### Created By
 Isabelle George
